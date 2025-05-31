@@ -1,107 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="styles.css" />
+  <title>YouTube Clone</title>
 </head>
 <body>
-  <nav>
-    <div>
-      <img src="youtubelogosvg.png" width="100px" alt="Youtubelogo">
+  <aside class="lateral">
+    <div class="logo">
+      <img src="youtubelogosvg.png" alt="Logo" width="100px" />
     </div>
-    <div class="busqueda" >
-      <input type="text" placeholder="Buscar...">
-      <button>
-        <img id="lupa" src="lupacon.png" width="19px" alt="Lupa">
-      </button>
+    <div class="seccion">
+      <ul>
+        <li>Inicio</li>
+        <li>Shorts</li>
+        <li>Suscripciones</li>
+      </ul>
+      <div class="linea"></div>
     </div>
-    <div class="user">
-      <button id="botones">+ Crear</button>
-      <div>Avatar</div>
+    <div class="seccion">
+      <h3>Tú</h3>
+      <ul>
+        <li>Mi canal</li>
+        <li>Historial</li>
+        <li>Listas</li>
+        <li>Ver más tarde</li>
+        <li>Videos que me gustan</li>
+      </ul>
+      <div class="linea"></div>
     </div>
-  </nav>
-  <main class="container">
-    <aside class="lateral">
-      <div class="seccion">
-        <ul>
-          <li>Inicio</li>
-          <li>Shorts</li>
-          <li>Suscripciones</li>
-        </ul>
+  </aside>
+
+  <div class="contenido">
+    <nav>
+      <div class="busqueda">
+        <input type="text" placeholder="Buscar..." />
+        <button>
+          <img src="lupacon.png" alt="Lupa" width="19px" />
+        </button>
       </div>
-      <div class="seccion">
-        <h4>Tú</h4>
-        <ul>
-          <li>Inicio</li>
-          <li>Shorts</li>
-          <li>Suscripciones</li>
-        </ul>
+      <div class="user">
+        <button>+ Crear</button>
+        <div>Avatar</div>
       </div>
-      <div class="seccion">
-        <h4>Tú</h4>
-        <ul>
-          <li>Inicio</li>
-          <li>Listas de reproducción</li>
-          <li>Mis videos</li>
-          <li>Ver mas tarde</li>
-          <li>Videos que me gustan</li>
-        </ul>
-      </div>
-      <div class="seccion">
-        <h4>Suscripciones</h4>
-        <ul>
-          <li>Inicio</li>
-          <li>Shorts</li>
-          <li>Suscripciones</li>
-          <li>Inicio</li>
-          <li>Shorts</li>
-          <li>Suscripciones</li>
-          <li>Inicio</li>
-          <li>Shorts</li>
-        </ul>
-      </div>
-    </aside>
-  <header>
-    <div>
+    </nav>
+
     <section class="menu">
-        <div class="menu-botones">
-          <button id="botones" >Todo</button>
-          <button id="botones" >Música</button>
-          <button id="botones" >Videojuegos</button>
-          <button id="botones" >Noticias</button>
-          <button id="botones" >IA</button>
-          <button id="botones" >Todo</button>
-          <button id="botones" >Música</button>
-          <button id="botones" >Videojuegos</button>
-          <button id="botones" >Noticias</button>
-          <button id="botones" >Todo</button>
-          <button id="botones" >Música</button>
-          <button id="botones" >Videojuegos</button>
-          <button id="botones" >Noticias</button>
-          <button id="botones" >IA</button>
-          <button id="botones" >Todo</button>
-          <button id="botones" >Música</button>
-          <button id="botones" >Todo</button>
-          <button id="botones" >Música</button>
-          <button id="botones" >Videojuegos</button>
-          <button id="botones" >Noticias</button>
-          <button id="botones" >IA</button>
-          <button id="botones" >Todo</button>
-          <button id="botones" >Música</button>
-          <button id="botones" >Videojuegos</button>
-          <button id="botones" >Noticias</button>
-          <button id="botones" >Todo</button>
-          <button id="botones" >Música</button>
-          <button id="botones" >Videojuegos</button>
-          <button id="botones" >Noticias</button>
-          <button id="botones" >IA</button>
-          <button id="botones" >Todo</button>
-          <button id="botones" >Música</button>
+      <div class="menu-botones">
+        <button class="boton-categoria">Todo</button>
+        <button class="boton-categoria">Música</button>
+        <button class="boton-categoria">Videojuegos</button>
+        <button class="boton-categoria">Noticias</button>
+        <button class="boton-categoria">IA</button>
+        <button class="boton-categoria">Cine</button>
+        <button class="boton-categoria">Cocina</button>
+        <button class="boton-categoria">Arte</button>
+        <button class="boton-categoria">Tecnología</button>
+        <button class="boton-categoria">Estilo</button>
       </div>
     </section>
-    </header>
-  </main>
+
+    <main>
+      <h1>Contenido principal</h1>
+      <p>Aquí puedes añadir tus tarjetas de videos, carruseles, etc.</p>
+    </main>
+  </div>
 </body>
 </html>
