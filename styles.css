@@ -24,6 +24,7 @@ body {
   height: 100%;
   background-color: #0f0f0f;
   padding: 20px;
+  z-index: 1100;
 }
 
 .lateral .seccion {
@@ -51,9 +52,6 @@ body {
   margin-top: 10px;
 }
 
-.contenido {
-  width: calc(100% - 200px);
-}
 
 nav {
   width: 100%;
@@ -75,7 +73,10 @@ nav {
 
 .busqueda {
   width: 500px;
+  height: 40px;
   display: flex;
+  position: relative;
+  left: 480px;
   border-radius: 20px;
   overflow: hidden;
   border: 1px solid #aaa;
@@ -83,7 +84,7 @@ nav {
 
 .busqueda input {
   padding: 10px;
-  width: 700px;
+  width: 600px;
   background-color: #1c1c1c;
   color: white;
   border: none;
@@ -97,17 +98,39 @@ nav {
   cursor: pointer;
 }
 
-.user {
+.lupa {
   display: flex;
-  gap: 10px;
+  justify-content: center;
   align-items: center;
-  padding-right: 0%;
 }
+
+.user {
+  position: absolute;
+  right: 100px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+}
+
+.icon:hover {
+  background-color: #303030;
+  padding: 8px 16px;
+}
+
 
 /* MENÚ DE BOTONES */
 .menu {
   width: 100%;
   position: fixed;
+  left: 200px;
+  justify-content: flex-end;
   top: 60px;
   background-color: #0f0f0f;
   z-index: 999;
@@ -150,7 +173,7 @@ main {
 
 .videos-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(1, 1fr);
   gap: 20px;
 }
 
@@ -200,4 +223,25 @@ main {
 .video-info .views {
   font-size: 12px;
   color: #aaa;
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  
+  .videos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .videos-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
