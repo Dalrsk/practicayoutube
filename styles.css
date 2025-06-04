@@ -51,7 +51,7 @@ body {
   border-bottom: 1px solid #444;
   margin-top: 10px;
 }
-
+/* BARRA DE NAVEGACION */
 
 nav {
   width: 100%;
@@ -166,7 +166,7 @@ nav {
   background-color: #535353;
 }
 
-/* MAIN CONTENT */
+/* MAIN */
 main {
   padding: 30px 20px;
 }
@@ -234,6 +234,9 @@ main {
   font-size: 12px;
   color: #aaa;
 }
+
+/*Responsive*/
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .lateral {
@@ -241,11 +244,10 @@ main {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {...}
+@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  
   .videos-grid {
     grid-template-columns: repeat(2, 1fr);
   }
