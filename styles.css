@@ -113,15 +113,25 @@ nav {
 }
 
 .icon {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  display: flex;
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  overflow: hidden;
 }
 
-.icon:hover {
-  background-color: #303030;
-  padding: 8px 16px;
+
+
+.notificacion {
+  padding: 4px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.notificacion:hover {
+  background-color: #444;
+  transition: all 0.7s ease;
 }
 
 
@@ -129,7 +139,7 @@ nav {
 .menu {
   width: 100%;
   position: fixed;
-  left: 200px;
+  left: 190px;
   justify-content: flex-end;
   top: 60px;
   background-color: #0f0f0f;
@@ -226,6 +236,8 @@ main {
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  .lateral {
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
